@@ -1,0 +1,56 @@
+.header{
+    position: relative;
+
+    &__top{
+        background: #B36050;
+        padding: 10px 0;
+        p{
+            color: #F1D3B9;
+            text-align: center;
+            font-size: 17px;
+            line-height: 27.2px; /* 160% */
+        }
+
+    }
+
+        &__bottom {
+            padding:  5px 15px;
+            justify-content: space-between;
+            background: #fff;
+            &>div, &>ul{
+                width: 25%;
+            }
+
+            a{
+                font-size: 18px;
+                line-height:  160% ;
+                text-transform: capitalize;
+            }
+        }
+
+        &__links{
+           justify-content: space-between;
+        }
+
+        &__logo{
+            margin: 0 auto;
+            text-align: center;
+
+           
+        }
+        &__right{
+            justify-content: right;
+            display: flex;
+            gap: 30px;
+
+            button{
+                background-color: transparent ;
+                display: inline-flex;
+                gap: 5px;
+                align-items: center;
+            }
+
+        }
+
+    
+}

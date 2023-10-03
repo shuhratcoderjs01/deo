@@ -1,0 +1,402 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto";
+  color: #B4604D;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button, input {
+  outline: none;
+  border: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.dflex {
+  display: flex;
+  align-items: center;
+}
+
+.dgrid {
+  display: grid;
+  align-items: center;
+}
+
+@media (max-width: 1170px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+.btn {
+  color: #FFF;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 169.412%;
+  background: #B45F4D;
+  padding: 10px 20px;
+}
+
+.card {
+  max-width: 330px;
+  display: inline-block;
+}
+.card__img {
+  width: 100%;
+}
+.card__img img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card__title {
+  margin-top: 10px;
+  padding-bottom: 15px;
+}
+.card h4 {
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 140%;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header {
+  position: relative;
+}
+.header__top {
+  background: #B36050;
+  padding: 10px 0;
+}
+.header__top p {
+  color: #F1D3B9;
+  text-align: center;
+  font-size: 17px;
+  line-height: 27.2px; /* 160% */
+}
+.header__bottom {
+  padding: 5px 15px;
+  justify-content: space-between;
+  background: #fff;
+}
+.header__bottom > div, .header__bottom > ul {
+  width: 25%;
+}
+.header__bottom a {
+  font-size: 18px;
+  line-height: 160%;
+  text-transform: capitalize;
+}
+.header__links {
+  justify-content: space-between;
+}
+.header__logo {
+  margin: 0 auto;
+  text-align: center;
+}
+.header__right {
+  justify-content: right;
+  display: flex;
+  gap: 30px;
+}
+.header__right button {
+  background-color: transparent;
+  display: inline-flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.hero {
+  position: relative;
+  height: 435px;
+}
+.hero__bg {
+  background-image: url("../../assets/img/heroBg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  left: 0;
+}
+.hero__btn {
+  position: absolute;
+  left: 50%;
+  bottom: 55px;
+  transform: translateX(-50%);
+}
+
+.meet {
+  background-color: #A9AE8D;
+  padding: 70px 0;
+}
+.meet__content {
+  color: #F6F4EC;
+}
+.meet__content span {
+  font-size: 18px;
+  line-height: 160%;
+  text-transform: uppercase;
+}
+.meet__content h3 {
+  font-size: 33px;
+  font-style: 600;
+  font-weight: 400;
+  line-height: 64px;
+  margin: 15px 0 30px;
+}
+.meet__content a {
+  line-height: 170%;
+}
+
+.pick {
+  background: #F6F4EC;
+  padding-bottom: 40px;
+}
+.pick__title {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 170.435%;
+  text-transform: capitalize;
+  padding: 40px 0;
+}
+.pick__box {
+  justify-content: space-between;
+}
+.pick__arrow {
+  justify-content: space-between;
+}
+.pick__arrow > span {
+  cursor: pointer;
+}
+.pick__arrow .arrow__right {
+  transform: rotate(180deg);
+}
+
+.shop {
+  padding: 24px 0 50px;
+}
+.shop__box {
+  text-align: center;
+  padding: 0 40px;
+  position: relative;
+}
+.shop__img img {
+  height: 100%;
+}
+.shop__title {
+  background: #DF9B7A;
+  padding: 30px;
+  margin-top: -5px;
+  justify-content: space-between;
+  position: relative;
+  top: -100%;
+}
+.shop__title h5 {
+  color: #F6F4EC;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 160% */
+  text-transform: uppercase;
+}
+.shop__title a {
+  color: #F6F4EC;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* */
+}
+
+.model {
+  background: #F1D3B9;
+  padding: 60px 0 125px;
+}
+.model__box {
+  position: relative;
+  height: 650px;
+}
+.model__item {
+  position: absolute;
+  display: inline;
+  display: inline-block;
+}
+.model__item:first-child {
+  max-width: 340px;
+  bottom: -4%;
+  left: 11%;
+  z-index: 1;
+  height: 50%;
+  display: flex;
+  align-items: flex-end;
+  text-align: end;
+  border: 1px solid;
+}
+.model__item:first-child img {
+  height: 100%;
+}
+.model__item:nth-child(2) {
+  max-width: 632px;
+  height: 100%;
+  top: 50%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+.model__item:nth-child(2) img {
+  height: 100%;
+}
+.model__text {
+  max-width: 518px;
+  top: 18%;
+  background: white;
+  right: 15%;
+  padding: 50px;
+}
+.model__text h4 {
+  color: #B45F4D;
+  font-family: Roboto;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 57.6px;
+  text-align: center;
+}
+.model__text p {
+  color: #B45F4D;
+  font-family: Roboto;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30.4px;
+  margin: 22px 0 40px;
+}
+
+.follow {
+  padding: 25px 5px 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.follow__title {
+  color: #000;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 23px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 39.2px; /* 170.435% */
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+.follow__box {
+  justify-content: space-between;
+}
+.follow__img {
+  position: relative;
+}
+.follow__img::after {
+  position: absolute;
+  bottom: 11px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: "";
+  width: 46px;
+  height: 46px;
+  display: block;
+  background-image: url("../../assets/img/logocricle.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.footer {
+  background: #F6F4EC;
+  padding: 65px 0 60px;
+}
+.footer__box {
+  justify-content: space-between;
+}
+.footer__box a {
+  color: #B45F4D;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.6px; /* 140% */
+}
+.footer__links {
+  gap: 112px;
+}
+.footer__links ul li {
+  margin-bottom: 12px;
+}
+.footer__form h6, .footer__form p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22.4px; /* 160% */
+}
+.footer__form .input {
+  position: relative;
+  display: flex;
+  margin: 14px 0 22px;
+}
+.footer__form input {
+  width: 100%;
+  display: inline-block;
+  border: #B45F4D solid 1px;
+  border-right: none;
+  height: 40px;
+  padding: 0 5px;
+  color: #B45F4D;
+}
+.footer__form button {
+  border: #B45F4D solid 1px;
+  border-left: none;
+  padding: 18px 10px;
+  background: #fff;
+  color: #B45F4D;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 0px; /* 0% */
+  text-transform: uppercase;
+}
+.footer__dae {
+  margin-top: 112px;
+  display: block;
+  color: #B45F4D;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.6px; /* 140% */
+}/*# sourceMappingURL=style.css.map */

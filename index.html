@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skateboard
+    </title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    
+    <header class="header">
+
+            <div class="header__top">
+                <p>Free Shipping on US Orders Over $60</p>
+            </div>
+
+            <div class="header__bottom dflex">
+                <ul class="header__links dflex">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">The Edit</a></li>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+
+                <div class="header__logo">
+                    <svg width="120" height="56" viewBox="0 0 120 56" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <path d="M0 0H120V56H0V0Z" fill="url(#pattern0)"/>
+                        <defs>
+                        <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                        <use xlink:href="#image0_2_26" transform="scale(0.00833333 0.0178571)"/>
+                        </pattern>
+                        <image id="image0_2_26" width="120" height="56" xlink:href="data:image/png;base64,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"/>
+                        </defs>
+                        </svg>
+                </div>
+
+                <div class="header__right ">
+                    <a href="#">Account</a>
+
+                    <button class="header__korzinka">
+                        <span>
+                            <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2_17)">
+                                <path d="M19.7297 19.14L18 4.4H14.8108C14.4324 2.145 12.4324 0.440002 9.99997 0.440002C7.56754 0.440002 5.56754 2.145 5.18916 4.4H1.99997L0.270239 19.14C0.162131 19.965 0.486455 20.46 0.756725 20.79C1.027 21.065 1.51348 21.45 2.4324 21.45H17.5675C18.2702 21.45 18.8648 21.23 19.2432 20.735C19.6216 20.35 19.7838 19.745 19.7297 19.14ZM9.99997 2.64C11.1892 2.64 12.2162 3.41 12.5405 4.4H7.40537C7.78375 3.355 8.81078 2.64 9.99997 2.64ZM2.4324 19.25L3.94591 6.6H5.1351V8.25C5.1351 8.855 5.62159 9.35 6.21619 9.35C6.81078 9.35 7.29727 8.855 7.29727 8.25V6.6H12.7027V8.25C12.7027 8.855 13.1892 9.35 13.7838 9.35C14.3783 9.35 14.8648 8.855 14.8648 8.25V6.6H16.054L17.5675 19.25H2.4324Z" fill="black"/>
+                                </g>
+                                <defs>
+                                <clipPath id="clip0_2_17">
+                                <rect width="20" height="22" fill="white"/>
+                                </clipPath>
+                                </defs>
+                                </svg>
+                                
+                        </span>
+                        <span >0</span>
+                    </button>
+                </div>
+
+
+            </div>
+
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero__bg">o</div>
+
+             
+            <a href="#" class="hero__btn btn"> Shop Now</a>
+
+        </section>
+
+        <section class="meet">
+
+            <div class="meet__content container">
+                <span>Ready To Get Drenched?</span>
+                <h3>Meet Monsoon Moisture Mask</h3>
+                <a href="#">Shop Now</a>
+            </div>
+        </section>
+
+
+        <section class="pick">
+           <div class="container">
+            <h2 class="pick__title">
+                Pick a Pretty Bottle
+            </h2> 
+             
+            <div class="pick__box dflex">
+                 <a class="card" href="#">
+                    <div class="card__img">
+
+                        <img src="./assets/img/img001.jpg"   alt="img">
+                    </div>
+                    <div class="card__title">
+                        <h4>The Daedreamer Set</h4>
+                    <span>$49.00</span>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__img">
+
+                        <img src="./assets/img/img002.jpg"   alt="img">
+                    </div>
+                    <div class="card__title">
+                        <h4>Shampoot</h4>
+                    <span>$24.00 to $64.00</span>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__img">
+
+                        <img src="./assets/img/img003.jpg"   alt="img">
+                    </div>
+                    <div class="card__title">
+                        <h4>Conditioner</h4>
+                    <span>$24.00 to $64.00</span>
+                    </div>
+                </a>
+            </div>
+             
+            <div class="pick__arrow dflex">
+                <span class="arrow__left">
+                    <img src="./assets/img/arrow.png" alt="srrow">
+                </span>
+                <span class="arrow__right" >
+                    <img src="./assets/img/arrow.png" alt="srrow">
+                </span>
+            </div>
+           </div>
+        </section>
+
+
+        <section class="shop">
+
+            <div class="shop__box container " >
+                
+                    <div class="shop__img">
+                        <img src="./assets/img/imgbg.jpg" alt="img">
+                    </div>
+ 
+                        <div class="shop__title dflex">
+                             <h5>
+                                Feel the warmth of the desert wherever you are.
+                             </h5>
+
+                             <a href="#">
+                                Shop Sets
+                             </a>
+
+                        </div>
+                 
+                </div>
+
+        </section>
+
+
+        <section class="model">
+            <div class="container">
+                <div class="model__box">
+                    <div class="model__item">
+                        <img src="./assets/img/img004.jpg" alt="img">
+                    </div>
+                    <div class="model__item  ">
+                        <img src="./assets/img/img005.jpg" alt="img">
+                    </div>
+                    <div class="model__item model__text">
+                        <h4>Meet Dae</h4>
+                        <p>We’re a haircare line based in sunny Arizona. Our products are made up of the many things that make our home special, including the scent of orange blossoms in the air, colors of majestic sunsets and nourishing ingredients derived from desert botanicals. We believe haircare doesn’t have to be complicated and aimed to make a line that is simple and effective. We hope that dae plays a special role in your everyday hair routine from sunrise to sunset and allows you to feel the warmth of the desert wherever you are.</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+        </section>
+
+        <section class="follow">
+            <div class="conatiner">
+                <h5 class="follow__title">
+                    Follow Us @daehair
+                </h5>
+
+                <div class="follow__box dflex">
+                    <div class="follow__img">
+                        <img src="./assets/img/follow.jpg" alt="img">
+                    </div>
+                    <div class="follow__img">
+                        <img src="./assets/img/follow002.jpg" alt="img">
+                    </div>
+                    <div class="follow__img">
+                        <img src="./assets/img/follow003.jpg" alt="img">
+                    </div>
+                    <div class="follow__img">
+                        <img src="./assets/img/follow004.jpg" alt="img">
+                    </div>
+                    <div class="follow__img">
+                        <img src="./assets/img/follow005.jpg" alt="img">
+                    </div>
+                    <div class="follow__img">
+                        <img src="./assets/img/follow006.jpg" alt="img">
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            
+           <div class="footer__box dflex">
+               <div class="dflex footer__links">
+                        <ul>
+                            <li><a href="#">Sustainability</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Careers</a></li>
+                        </ul>
+
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">liCA Privacy Rightsnk</a></li>
+                            <li><a href="#">Terms of Use</a></li>
+                            <li><a href="#">lNewsletterink</a></li>
+                </ul>
+               </div>
+            <div class="footer__form">
+                  <h6>ONLY GOOD HAIR DAES AHEAD—AND 10% OFF YOUR FIRST ORDER</h6>
+
+                    <div class="input">
+                        <input type="text"> 
+                        <button>SUBSCRIBE</button>
+
+                    </div>
+                  <p>Want to shop in person? Swing by our showroom.</p>
+                  <p>M-F, 10am-2pm 5051 E Indigo St, Suite 105, Mesa, AZ 85205</p>
+            </div>
+           </div>
+
+           <span class="footer__dae">
+            © 2021 dae
+            . All rights reserved.
+           </span>
+        </div>
+
+
+    </footer>
+</body>
+
+</html>

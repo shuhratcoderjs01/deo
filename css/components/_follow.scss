@@ -1,0 +1,48 @@
+.follow{
+    padding: 25px 5px 40px;
+    max-width: 1440px;
+    margin: 0 auto;
+    
+
+    &__title{
+                color: #000;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 39.2px; /* 170.435% */
+        text-transform: capitalize;
+        margin-bottom: 40px;
+    }
+
+    &__box{
+
+        justify-content: space-between;
+    }
+
+
+
+    &__img{
+
+
+        position: relative;
+        &::after{
+
+            position: absolute;
+            bottom: 11px;
+            left: 50%;
+            transform: translateX(-50%);
+            content: '';
+            width: 46px;
+            height: 46px;
+            display: block;
+            background-image: url('../../assets/img/logocricle.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            border-radius: 50%;
+            
+        }
+    }
+}

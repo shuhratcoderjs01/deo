@@ -1,0 +1,31 @@
+.meet{
+    background-color: #A9AE8D;
+    padding: 70px 0;
+
+    &__content{
+
+        color: #F6F4EC;
+
+        span {
+            font-size: 18px;
+
+            line-height:  160%;
+            text-transform: uppercase;
+        }
+        h3{
+                    font-size: 33px;
+        font-style: 600;
+        font-weight: 400;
+        line-height: 64px;
+        margin: 15px 0 30px;
+        }
+
+        a{
+            
+            line-height: 170%;
+
+        }
+        
+    }
+
+}

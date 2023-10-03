@@ -1,0 +1,28 @@
+.pick{
+    background: #F6F4EC;
+    padding-bottom: 40px;
+
+    &__title{
+        text-align: center;
+        font-size: 23px;
+        font-weight: 600;
+        line-height:170.435% ;
+        text-transform: capitalize;
+        padding: 40px 0;
+    }
+
+    &__box{
+        justify-content: space-between;
+    }
+
+    &__arrow{
+        justify-content: space-between;
+        &>span{
+            cursor: pointer;
+        }
+        .arrow__right{
+            transform: rotate(180deg);
+            
+        }
+    }
+}
